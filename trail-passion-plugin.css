@@ -1,0 +1,165 @@
+div.trailpassion {
+    position: relative;
+    background-color: #fed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+div.trailpassion:hover > div.fullscreen {
+    transform: translateY(0);
+    transition: all .4s;
+}
+
+div.trailpassion > div.fullscreen {
+    position: absolute;
+    right: 0;
+    top: -32px;
+    width: 64px;
+    height: 32px;
+    background: rgba(0,0,0,.7);
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+    transform: translateY(100%);
+    opacity: .3;
+}
+
+div.trailpassion > div.fullscreen:hover {
+    opacity: 1;
+}
+
+
+div.trailpassion-gui {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: top;
+    position: fixed;    
+    padding: 8px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    z-index: 999999;
+    overflow: auto;
+    line-height: 100%;
+}
+
+div.trailpassion-gui input {
+    padding: 2px 6px;
+    margin: 2px;
+}
+
+div.trailpassion-gui div.close {
+    position: fixed;
+    top: 2px;
+    right: 4px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    text-align: right;
+}
+
+div.trailpassion-gui div.close:hover {
+    color: #f66;
+}
+
+
+div.trailpassion-gui > div {
+    display: inline-block;
+    flex: 1 1;
+    margin: 8px;
+    padding: 8px;
+    color: #eee;
+    max-width: 300px;
+    min-width: 240px;
+}
+
+div.trailpassion-gui h1 {
+    font-size: 110%;
+    font-variant: small-caps;
+    color: #7f3;
+}
+
+div.trailpassion-gui div.row {
+    margin: 4px;
+    width: 100%;
+}
+
+div.trailpassion-gui div.row > *:first-child {
+    display: inline-block;
+    width: 100px;
+}
+
+div.trailpassion-gui .trailpassion-filter {
+    width: 95%;
+}
+
+div.trailpassion-gui div.trace {
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #090;
+    border: 1px solid #000;
+    background-color: #040;
+    background-image: linear-gradient(to bottom, #333, #000);
+    cursor: pointer;
+    font-size: 70%;    
+}
+
+div.trailpassion-gui div.trace b {
+    color: yellow;
+}
+
+div.trailpassion-gui div.trace i {
+    color: orange;
+}
+
+div.trailpassion-gui div.trace.hide {
+    display: none;
+}
+
+div.trailpassion-gui button {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 48px;
+    color: #ff0;
+    margin: 6px;
+    background-image: linear-gradient(to bottom, #482, #241);
+    border-radius: 6px;
+    pointer: cursor;
+    border: 1px solid #cec;
+}
+
+div.trailpassion-gui button > div {
+    position: absolute;
+    top: 0;
+    left: 8px;
+    bottom: 0;
+    right: 8px;
+    padding: 0;
+    line-height: 48px;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: right 50%;
+    background-size: 30px 30px;
+}
+
+div.trailpassion-gui button.trace > div {
+    background-image: url(trace.png);
+}
+
+div.trailpassion-gui button.fly > div {
+    background-image: url(fly.png);
+}
+
+div.trailpassion-gui button.profil > div {
+    background-image: url(profil.png);
+}
+
+div.trailpassion-gui button.follow > div {
+    background-image: url(follow.png);
+}
+
